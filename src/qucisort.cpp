@@ -33,10 +33,10 @@ void quicksort(int start, int end)
     if (start >= end)
         return;
 
-    //1.ºÐÇÒ
+    //1.ë¶„í• 
     int pivotpoint = start;
     partition(start, end, pivotpoint);
-    //2.Á¤º¹
+    //2.ì •ë³µ
     quicksort(start, pivotpoint - 1);
     quicksort(pivotpoint + 1, end);
 }
