@@ -5,7 +5,12 @@
     "string": "cpp",
     "vector": "cpp",
     "*.tcc": "cpp",
-    "string_view": "cpp"
+    "string_view": "cpp",
+    "array": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp",
+    "initializer_list": "cpp",
+    "utility": "cpp"
   },
   "terminal.integrated.shell.windows": ""
 }
