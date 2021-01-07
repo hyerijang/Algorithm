@@ -1,5 +1,6 @@
 {
   "version": "2.0.0",
+  "isShellCommand": true,
   "tasks": [
     {
       "type": "shell",
@@ -14,7 +15,21 @@
       "options": {
         "cwd": "/usr/bin"
       },
-      "problemMatcher": ["$gcc"],
+
+      //컴파일 시 오류 편집기에 반영
+      "problemMatcher": {
+        "fileLocation": ["relative", "${workspaceRoot}"],
+        "pattern": {
+          // The regular expression.
+          //Example to match: helloWorld.c:5:3: warning: implicit declaration of function 'prinft'
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning error):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "message": 5
+        }
+      },
       "group": {
         "kind": "build",
         "isDefault": true
