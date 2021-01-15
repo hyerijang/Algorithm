@@ -45,7 +45,16 @@
     "sstream": "cpp",
     "stdexcept": "cpp",
     "streambuf": "cpp",
-    "typeinfo": "cpp"
+    "typeinfo": "cpp",
+    "regex": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "unordered_set": "cpp",
+    "any": "cpp",
+    "bitset": "cpp",
+    "stack": "cpp",
+    "variant": "cpp",
+    "valarray": "cpp"
   },
   "terminal.integrated.shell.windows": ""
 }
