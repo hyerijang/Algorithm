@@ -6,6 +6,7 @@ int heap[9] = {1, 5, 2, 9, 3, 4, 7, 8, 6};
 void makeheap()
 {
 
+    //1번 노드부터 탐색
     for (int i = 1; i < n; i++)
     {
         int child = i;
@@ -30,15 +31,18 @@ void sortheap()
 {
     for (int i = n - 1; i >= 0; i--)
     {
+        //가장 끝에 있는 노드와 root노드 교환
         int temp = heap[0];
         heap[0] = heap[i];
         heap[i] = temp;
+
+        //새로운 root에서부터 아래로 내려간다.
         int root = 0;
         int c = 1;
         do
         {
             c = 2 * root + 1; //c는 왼쪽 자식
-            //자식들 중 큰값 찾기
+            //자식들 중 큰값 찾기 == c
             if (heap[c] < heap[c + 1] && c < i - 1)
             {
                 c++;
