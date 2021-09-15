@@ -78,5 +78,8 @@
     "thread": "cpp",
     "typeindex": "cpp"
   },
-  "terminal.integrated.shell.windows": ""
+  "terminal.integrated.shell.windows": "",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.languageServer": "Pylance"
 }
