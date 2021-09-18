@@ -1,0 +1,11 @@
+#여러개의 반환 값
+#    파이썬에 함수는 여러개의 반환 값을 가질 수 있다
+
+def operator(a,b):
+      add_var = a+b
+      subtact_var = a-b
+      return add_var, subtact_var
+
+add, subtact = operator(1,3)
+
+print (add, subtact ,sep = ",")
