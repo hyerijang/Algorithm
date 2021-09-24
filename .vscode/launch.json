@@ -6,8 +6,7 @@
       "type": "python",
       "request": "launch",
       "program": "${file}",
-      "console": "integratedTerminal",
-      "args": ["<", "input.txt", ">", "output.txt" ] --> "args": ["<input.txt", "output.txt" ]
+      "args": ["<", "input.txt"]
     },
     {
       "name": "g++ build and debug active file",
