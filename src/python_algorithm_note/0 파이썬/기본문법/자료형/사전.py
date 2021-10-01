@@ -4,10 +4,15 @@
 
 # 초기화 : dict 함수
 data = dict()
-
+# 초기화 1
 data['사과'] = 'Apple'
 data['바나나'] = 'Banana'
 data['바나나'] = 'Banana'
+
+
+# 초기화 2 : 중괄호
+dict1 = {'X': 2, 'Y': 3, 'Z': 4}
+print(dict1)
 
 print(data)
 
