@@ -4,16 +4,18 @@
 
 stack = []
 
-stack. append(5)
+stack. append(1)
 stack.append(2)
 stack.append(3)
-stack.append(7)
+stack.append(4)
 print(stack)
 
-stack.pop()
-print(stack)
+# pop(인덱스) 하면 해당 인덱스의 데이터 pop한다.
+data = stack.pop()  # stack.pop(-1)와 같음
+print(stack, "          popped data=", data)
 
-stack.append(1)
+
+stack.append(99)
 stack.append("latest")
 
 
