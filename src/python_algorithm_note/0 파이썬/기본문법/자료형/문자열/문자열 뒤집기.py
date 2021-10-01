@@ -3,7 +3,7 @@ from typing import Deque
 
 s = input()
 
-# list로 구현
+# [방법1 ] list로 변환하여 뒤집기
 
 
 def solution(s):
@@ -14,7 +14,7 @@ def solution(s):
 
 print(solution(s))
 
-# 슬라이싱으로 구현 (약간 더 빠름)
+# [방법 2] 슬라이싱으로 뒤집기 (약간 더 빠름)
 
 
 def solution2(s):
