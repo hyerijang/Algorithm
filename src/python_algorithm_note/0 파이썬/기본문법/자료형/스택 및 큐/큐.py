@@ -17,7 +17,7 @@ queue.append(3)
 queue.append(7)
 print(queue)
 
-queue.popleft()
+queue.popleft()  # ! popleft() 임에 주의
 print(queue)
 
 queue.append(1)

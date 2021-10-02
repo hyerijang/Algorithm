@@ -16,8 +16,8 @@ def minHeapsort(iterable):
 
 
 def maxHeapsort(iterable):
-    # 최소 힙을 응용하여
-    # 데이터의 부호를 바꾸어서 넣고 뺀다.
+    # [최대힙] : 최소 힙을 응용하여
+    # !데이터의 부호를 바꾸어서 넣고 뺀다.
     h = []
     result = []
 
