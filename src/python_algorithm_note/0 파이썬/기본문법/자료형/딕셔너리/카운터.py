@@ -21,3 +21,7 @@ def solution1(participant, completion):
 
 
 print(solution1(participant, completion))
+
+
+# [가장 빈도수 높은 요소 추출]
+print(collections.Counter(participant).most_common(2))
