@@ -7,27 +7,27 @@
       "request": "launch",
       "program": "${file}",
       "args": ["<", "input.txt"]
-    },
-    {
-      "name": "g++ build and debug active file",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
-      "preLaunchTask": "g++ build active file",
-      "args": ["<", "input.txt"],
-      "stopAtEntry": false,
-      "cwd": "${workspaceFolder}",
-      "environment": [],
-      "externalConsole": false,
-      "MIMode": "gdb",
-      "miDebuggerPath": "/usr/bin/gdb",
-      "setupCommands": [
-        {
-          "description": "Enable pretty-printing for gdb",
-          "text": "-enable-pretty-printing",
-          "ignoreFailures": true
-        }
-      ]
     }
+    // {
+    //   "name": "g++ build and debug active file",
+    //   "type": "cppdbg",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/bin/${fileBasenameNoExtension}",
+    //   "preLaunchTask": "g++ build active file",
+    //   "args": ["<", "input.txt"],
+    //   "stopAtEntry": false,
+    //   "cwd": "${workspaceFolder}",
+    //   "environment": [],
+    //   "externalConsole": false,
+    //   "MIMode": "gdb",
+    //   "miDebuggerPath": "/usr/bin/gdb",
+    //   "setupCommands": [
+    //     {
+    //       "description": "Enable pretty-printing for gdb",
+    //       "text": "-enable-pretty-printing",
+    //       "ignoreFailures": true
+    //     }
+    //   ]
+    // }
   ]
 }
