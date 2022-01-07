@@ -5,19 +5,22 @@ from collections import deque
 # [BFS 메서드 정의]
 def bfs(graph, start, visit):
     # !큐 구현
+    # *현재 노드를 삽입하고
     queue = deque([start])
-    # *현재 노드를 방문 처리 (처음 1개만)
+    # *현재 노드 방문 처리 (처음 1개만)
     visited[start] = True
 
     # 현재 노드와 연결된 다른 노드들 재귀적으로 방문
     while queue:
-        v = queue.popleft()
+        v = queue.popleft()  # - 실질적으로 방문하는 시점
         print(v, end=' ')
 
         for i in graph[v]:
             if not visited[i]:
                 queue.append(i)  # ! 큐에 넣는 조건 : 인근 노드일것 && 방문하지 않은 노드 일 것
                 # * 큐에 넣은 후 방문했다고 표시
+
+                # ==방문 표시 미리 함 ==
                 # - (큐는 선입후출이므로 다음 반복문에서 똑같은 노드 방문하지 않기위해서는 미리 표시해둬야함)
                 visited[i] = True
 
