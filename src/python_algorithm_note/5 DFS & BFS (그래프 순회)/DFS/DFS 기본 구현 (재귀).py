@@ -1,13 +1,11 @@
-
-# [DFS 메서드 정의 : 재귀로 구현]
 def dfs(graph, v, visit):
     # *현재 노드를 방문 처리
-    visited[v] = True  # - 방문
+    visited[v] = True  # 방문 처리
     print(v, end=' ')
     # 현재 노드와 연결된 다른 노드들 재귀적으로 방문
     for i in graph[v]:
         if not visited[i]:
-            dfs(graph, i, visited)
+            dfs(graph, i, visited)  # 재귀
 
 
 graph = [
